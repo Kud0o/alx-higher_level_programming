@@ -2,4 +2,5 @@
 pyfile="$PYFILE"
 pycfile="${pyfile}c"
 python -m compileall "$pyfile"
+echo "Compiling $PYFILE main.py ..."
 mv "${pyfile}" "$pycfile"
