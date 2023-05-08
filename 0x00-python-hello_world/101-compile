@@ -1,0 +1,5 @@
+#!/bin/bash
+pyfile="$PYFILE"
+pycfile="${pyfile}c"
+python -m compileall "$pyfile"
+mv "${pyfile}c" "$pycfile"
