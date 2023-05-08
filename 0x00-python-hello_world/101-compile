@@ -2,4 +2,4 @@
 pyfile="$PYFILE"
 pycfile="${pyfile}c"
 python -m compileall "$pyfile"
-mv "${pyfile}c" "$pycfile"
+mv "${pyfile}" "$pycfile"
