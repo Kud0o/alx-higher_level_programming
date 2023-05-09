@@ -1,3 +1,5 @@
 #!/usr/bin/python3
 
-print("{}".format(''.join(chr(i) for i in range(97, 97 + 26) if chr(i) != 'e' and chr(i) != 'q')), end='')
+print("{}".format(''.join(
+    chr(i) for i in range(97, 97 + 26) if chr(i) != 'e' and chr(i) != 'q'
+)), end='')
