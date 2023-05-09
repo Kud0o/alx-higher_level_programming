@@ -1,7 +1,10 @@
 #!/usr/bin/python3
 import random
 number = random.randint(-10000, 10000)
-d = f"{abs(number) % 10 * (number / abs(number)):.0f}"
+
+d = 0
+if number != 0:
+    d = int(abs(number) % 10 * (number / abs(number)))
 
 if d != 0:
     if d < 6:
