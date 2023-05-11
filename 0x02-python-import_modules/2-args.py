@@ -4,7 +4,7 @@ if __name__ == '__main__':
     import sys
 
     if len(sys.argv) - 1 == 1:
-        print("{}".format("1 argument."))
+        print("{}".format("1 argument:"))
         print("{index}: {param}".format(index=1, param=sys.argv[1]))
     elif len(sys.argv) - 1 == 0:
         print("{}".format("0 arguments."))
