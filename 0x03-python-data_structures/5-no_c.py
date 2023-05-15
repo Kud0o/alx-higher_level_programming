@@ -10,4 +10,3 @@ def no_c(my_string):
         else:
             res += [i]
     return ''.join(res)
-    
