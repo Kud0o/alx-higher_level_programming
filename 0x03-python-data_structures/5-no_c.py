@@ -8,6 +8,6 @@ def no_c(my_string):
         if i = 'c' and i = 'C':
             continue
         else:
-            res += i
+            res += [i]
     return ''.join(res)
     
