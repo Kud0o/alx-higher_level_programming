@@ -11,12 +11,10 @@ class Square:
         attr1 (_Square__Size): Private instance attribute size
     """
 
-    _size = 0
-
     def __init__(self, size=0):
         """Initializer with default size = 0"""
-        if type(size) != int:
+        if type(size) is not int:
             raise TypeError("size must be an integer")
         if size < 0:
             raise ValueError("size must be >= 0")
-        self.size = size
+        self.__size = size
