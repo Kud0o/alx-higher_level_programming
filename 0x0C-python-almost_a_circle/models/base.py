@@ -62,7 +62,7 @@ class Base:
         try:
             with open(cls.__name__ + ".json", "r", encoding="utf-8") as a_file:
                 pass
-        except:
+        except Exception:
             return []
         with open(cls.__name__ + ".json", "r", encoding="utf-8") as a_file:
             instanceList = cls.from_json_string(a_file.read())
